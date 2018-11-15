@@ -2,4 +2,6 @@
 
 ## Used Gems
 * 'devise'
-* 'bootstrap-sass'
+* 'bootstrap'
+* 'jquery-rails'
+* 'sprockets-rails'
