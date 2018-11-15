@@ -5,3 +5,4 @@
 * 'bootstrap'
 * 'jquery-rails'
 * 'sprockets-rails'
+* 'paperclip'

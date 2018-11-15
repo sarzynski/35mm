@@ -1,6 +1,14 @@
 @import "bootstrap";
 
-nav .navbar-nav li a{
-  color: white !important;
-  padding: 20px;
+nav .navbar-nav > li > a{
+  color: white;
+  padding: 10px;
   }
+
+body {
+  background-color: #E0E0E0;
+}
+
+div.white{
+background: white;
+}
