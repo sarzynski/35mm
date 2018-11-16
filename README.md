@@ -6,3 +6,4 @@
 * 'jquery-rails'
 * 'sprockets-rails'
 * 'paperclip'
+* 'rspec-rails'
