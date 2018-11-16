@@ -3,10 +3,9 @@
   <br>
   <%= image_tag f.file.url(:medium) %>
     <% if current_user %>
-  <%= link_to "Delete", photo_path(f), method: :delete%>
+  <%= button_to "Delete", photo_path(f),  :class=>"inbox-sf-add-btn tip", method: :delete%>
   <% end %>
-  <br><br>
-<%= f.description %>
+  <%= f.description %>
 </div>
 <br><br><br>
 <% end %>

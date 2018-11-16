@@ -9,8 +9,14 @@ body {
   background-color: #E0E0E0;
 }
 
-div.white{
-background: white;
-max-width:100%;
-max-height:100%;
+.parent {
+  width: 700px;
 }
+
+img {
+     padding:1px;
+     border:20px solid white;
+     background-color:white;
+     width: 100%;
+     height: auto;
+  }
