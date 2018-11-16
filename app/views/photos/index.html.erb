@@ -2,7 +2,9 @@
 <div class = "white">
   <br>
   <%= image_tag f.file.url(:medium) %>
+    <% if current_user %>
   <%= link_to "Delete", photo_path(f), method: :delete%>
+  <% end %>
   <br><br>
 <%= f.description %>
 </div>
