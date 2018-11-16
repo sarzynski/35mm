@@ -7,3 +7,4 @@
 * 'sprockets-rails'
 * 'paperclip'
 * 'rspec-rails'
+* 'kaminari'

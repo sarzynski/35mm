@@ -2,10 +2,15 @@
 <div class = "white">
   <br>
   <%= image_tag f.file.url(:medium) %>
-    <% if current_user %>
+  <% if current_user %>
+    <% if current_user.id == f.user_id %>
   <%= button_to "Delete", photo_path(f),  :class=>"inbox-sf-add-btn tip", method: :delete%>
+  <% end %>
   <% end %>
   <%= f.description %>
 </div>
 <br><br><br>
 <% end %>
+<div class = "pag">
+<%= paginate @photos %>
+</div>

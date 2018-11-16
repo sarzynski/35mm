@@ -4,7 +4,7 @@ class PhotosController < ApplicationController
   end
 
   def index
-    @photos = Photo.all
+    @photos = Photo.page(params[:page]).per(5)
   end
 
   def show
@@ -13,6 +13,7 @@ class PhotosController < ApplicationController
 
   def create
    @photo = Photo.new(permit_photo)
+   @photo.user_id = current_user.id
    if @photo.save
      redirect_to action: :index
    else
