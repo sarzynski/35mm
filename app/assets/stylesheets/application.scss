@@ -13,6 +13,10 @@ body {
   width: 600px;
 }
 
+div.white {
+  margin-bottom: 2em;
+}
+
 img {
      padding:1px;
      border:20px solid white;
@@ -53,4 +57,8 @@ div.pag {
 {
     background-color: #777777 !Important;
     border: solid 1px #777777;
+}
+
+div.list {
+  margin-bottom: 1em;
 }

@@ -30,6 +30,6 @@ class PhotosController < ApplicationController
   private
 
   def permit_photo
-    params.require(:photo).permit(:file,:description)
+    params.require(:photo).permit(:file,:camera,:film)
   end
 end

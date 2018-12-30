@@ -1,9 +1,9 @@
 %h1 New Photo
 = form_for @photo, html: { multipart: true } do |f|
+  = f.label :camera
+  .list= f.text_area :camera
+  = f.label :film
+  .list= f.text_area :film
   = f.label :file
-  = f.file_field :file
-  %br/
-  = f.label :description
-  = f.text_area :description
-  %br/
-  = f.submit
+  .list= f.file_field :file
+  .list= f.submit
