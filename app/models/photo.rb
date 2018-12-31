@@ -3,5 +3,7 @@ class Photo < ActiveRecord::Base
   validates_attachment_content_type :file, content_type: /\Aimage\/.*\z/
   validates :camera, length: { maximum: 200 }
   validates :film, length: { maximum: 200 }
+  validates :file, presence: true
+  acts_as_votable
 
 end

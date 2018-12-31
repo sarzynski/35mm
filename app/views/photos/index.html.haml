@@ -1,10 +1,16 @@
 - @photos.each do |f|
   .white
     = image_tag f.file.url(:medium)
+    = f.camera
+    |
+    = f.film
     - if current_user
       - if current_user.id == f.user_id || current_user.admin == true
         = button_to "Delete", photo_path(f),  :class=>"inbox-sf-add-btn tip", method: :delete
-    = f.camera
-    %p= f.film
+  = link_to like_photo_path(f.id), method: :put, remote: :true, class: 'like-post' do
+    .like-button
+      = image_tag('like.png', alt: 'like me')
+      #like-count
+        = f.get_upvotes.size
 .pag
   = paginate @photos

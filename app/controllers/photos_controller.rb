@@ -27,6 +27,12 @@ class PhotosController < ApplicationController
    redirect_to action: :index
  end
 
+ def like
+   @photo = Photo.find(params[:id])
+   @photo.upvote_from current_user
+   render layout: false
+ end
+
   private
 
   def permit_photo
