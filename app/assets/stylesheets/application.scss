@@ -64,9 +64,10 @@ div.pag {
 }
 
 .like-button {
-  margin: auto;
-  width: 7%;
-  margin-bottom: 2em;
+  position: absolute;
+  bottom: -25px;
+  right: 15px;
+  width: 6%;
 }
 
 .r {

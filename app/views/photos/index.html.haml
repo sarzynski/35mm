@@ -9,7 +9,7 @@
         = button_to "Delete", photo_path(f),  :class=>"inbox-sf-add-btn tip", method: :delete
   = link_to like_photo_path(f.id), method: :put, remote: :true, class: 'like-post' do
     .like-button
-      = image_tag('like.png', alt: 'like me')
+      = image_tag('like2.png', alt: 'like me')
       #like-count
         = f.get_upvotes.size
 .pag
