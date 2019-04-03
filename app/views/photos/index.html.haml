@@ -9,7 +9,7 @@
   = link_to like_photo_path(f.id), method: :put, remote: :true, class: 'like-post' do
     .like-button
       = image_tag('like2.png', alt: 'like me')
-      #like-count
+      %div{:id => "like-count_#{f.id}"}
         = f.get_upvotes.size
 .pag
   = paginate @photos
